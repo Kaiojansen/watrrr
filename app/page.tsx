@@ -212,7 +212,7 @@ export default function Home() {
                 <div className="space-y-3 text-gray-300">
                   <div className="flex justify-between">
                     <span className="font-tech">Address:</span>
-                    <span className="font-space text-sm text-blue-300">7xKXtg2CW87d97TXJSDpbD5jBkheTqA83TZRuJosgAsU</span>
+                    <span className="font-space text-sm text-blue-300">CQzT2xDP1hTsruxVUSRXgMBwnH3jgKNNEBHwUdRfpump</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="font-tech">Current Price:</span>
@@ -233,7 +233,7 @@ export default function Home() {
                 <div className="space-y-3 text-gray-300">
                   <div className="flex justify-between">
                     <span className="font-tech">Address:</span>
-                    <span className="font-space text-sm text-green-300">7xKXtg2CW87d97TXJSDpbD5jBkheTqA83TZRuJosgAsU</span>
+                    <span className="font-space text-sm text-green-300">F7HPUw7BnQzdfUjCUehqjEGjfkqFGGNmUEptHuVDpump</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="font-tech">Current Price:</span>
