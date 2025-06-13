@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react'
 import { getRealTimeTokenData } from '../lib/solana'
+import { TOKEN_CONFIG } from '../config/tokens'
 
 interface TokenData {
   price: number
@@ -27,19 +28,13 @@ export function useRealTimeData() {
       price: 0.000045,
       liquidity: 1250000,
       marketCap: 0,
-      address: 'CQzT2xDP1hTsruxVUSRXgMBwnH3jgKNNEBHwUdRfpump',
-      symbol: 'ISRAEL',
-      name: 'Israel Token',
-      decimals: 6
+      ...TOKEN_CONFIG.ISRAEL
     },
     iran: {
       price: 0.000038,
       liquidity: 980000,
       marketCap: 0,
-      address: 'F7HPUw7BnQzdfUjCUehqjEGjfkqFGGNmUEptHuVDpump',
-      symbol: 'IRAN',
-      name: 'Iran Token',
-      decimals: 6
+      ...TOKEN_CONFIG.IRAN
     },
     loading: false,
     error: null,

@@ -10,6 +10,7 @@ import FlagIran from '../components/FlagIran'
 import Image from 'next/image'
 import { Trophy, Shield, Flame, ShieldChevron, Rocket } from '@phosphor-icons/react'
 import { useRealTimeData } from '../hooks/useRealTimeData'
+import { TOKEN_CONFIG } from '../config/tokens'
 
 export default function Home() {
   const { israel, iran, loading, error, lastUpdate, refetch } = useRealTimeData()
@@ -212,7 +213,7 @@ export default function Home() {
                 <div className="space-y-3 text-gray-300">
                   <div className="flex justify-between">
                     <span className="font-tech">Address:</span>
-                    <span className="font-space text-sm text-blue-300">CQzT2xDP1hTsruxVUSRXgMBwnH3jgKNNEBHwUdRfpump</span>
+                    <span className="font-space text-sm text-blue-300">{TOKEN_CONFIG.ISRAEL.address}</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="font-tech">Current Price:</span>
@@ -233,7 +234,7 @@ export default function Home() {
                 <div className="space-y-3 text-gray-300">
                   <div className="flex justify-between">
                     <span className="font-tech">Address:</span>
-                    <span className="font-space text-sm text-green-300">F7HPUw7BnQzdfUjCUehqjEGjfkqFGGNmUEptHuVDpump</span>
+                    <span className="font-space text-sm text-green-300">{TOKEN_CONFIG.IRAN.address}</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="font-tech">Current Price:</span>

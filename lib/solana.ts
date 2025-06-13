@@ -1,33 +1,20 @@
 import { Connection, PublicKey, clusterApiUrl } from '@solana/web3.js'
+import { TOKEN_CONFIG, CONFIG, getDexScreenerUrl } from '../config/tokens'
 
-// Configuração dos tokens reais
-export const TOKENS = {
-  ISRAEL: {
-    address: 'CQzT2xDP1hTsruxVUSRXgMBwnH3jgKNNEBHwUdRfpump',
-    symbol: 'ISRAEL',
-    name: 'Israel Token',
-    decimals: 6
-  },
-  IRAN: {
-    address: 'F7HPUw7BnQzdfUjCUehqjEGjfkqFGGNmUEptHuVDpump',
-    symbol: 'IRAN', 
-    name: 'Iran Token',
-    decimals: 6
-  }
-}
+// Re-export para compatibilidade
+export const TOKENS = TOKEN_CONFIG
 
 // Configuração da conexão Solana
-export const SOLANA_NETWORK = 'mainnet-beta'
 export const connection = new Connection(
-  process.env.NEXT_PUBLIC_SOLANA_RPC_URL || clusterApiUrl(SOLANA_NETWORK),
+  CONFIG.SOLANA_RPC_URL || clusterApiUrl(CONFIG.NETWORK),
   'confirmed'
 )
 
 // Função para buscar preço real do token via API
 export async function getTokenPrice(tokenAddress: string): Promise<number> {
   try {
-    // Buscar dados reais do DexScreener ou Jupiter API
-    const response = await fetch(`https://api.dexscreener.com/latest/dex/tokens/${tokenAddress}`)
+    // Buscar dados reais do DexScreener
+    const response = await fetch(getDexScreenerUrl(tokenAddress))
     const data = await response.json()
     
     if (data.pairs && data.pairs.length > 0) {
@@ -60,7 +47,7 @@ export async function getTokenPrice(tokenAddress: string): Promise<number> {
 export async function getPoolLiquidity(tokenAddress: string): Promise<number> {
   try {
     // Buscar dados reais do DexScreener
-    const response = await fetch(`https://api.dexscreener.com/latest/dex/tokens/${tokenAddress}`)
+    const response = await fetch(getDexScreenerUrl(tokenAddress))
     const data = await response.json()
     
     if (data.pairs && data.pairs.length > 0) {
@@ -93,7 +80,7 @@ export async function getPoolLiquidity(tokenAddress: string): Promise<number> {
 // Função para buscar market cap real via API
 export async function getTokenMarketCap(tokenAddress: string): Promise<number> {
   try {
-    const response = await fetch(`https://api.dexscreener.com/latest/dex/tokens/${tokenAddress}`)
+    const response = await fetch(getDexScreenerUrl(tokenAddress))
     const data = await response.json()
     
     if (data.pairs && data.pairs.length > 0) {

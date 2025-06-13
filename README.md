@@ -74,6 +74,8 @@ Visit the live application: **[NBW - New Big War](https://nbw-war.vercel.app)**
 ### Token Integration
 - **Israel Token:** `CQzT2xDP1hTsruxVUSRXgMBwnH3jgKNNEBHwUdRfpump`
 - **Iran Token:** `F7HPUw7BnQzdfUjCUehqjEGjfkqFGGNmUEptHuVDpump`
+
+> ℹ️ **Token addresses are centrally managed in `config/tokens.ts` for easy maintenance**
 - Powered by **Pump.fun** platform
 - Solana Mainnet integration
 

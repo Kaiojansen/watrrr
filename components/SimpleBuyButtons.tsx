@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { ShieldChevron, Flame, ArrowSquareOut } from '@phosphor-icons/react'
 import FlagIsrael from './FlagIsrael'
 import FlagIran from './FlagIran'
+import { TOKEN_CONFIG, getPumpFunUrl } from '../config/tokens'
 
 interface SimpleBuyButtonsProps {
   israelPrice: number
@@ -19,12 +20,12 @@ export default function SimpleBuyButtons({
 
   const handleBuyIsrael = () => {
     onButtonClick?.()
-    window.open('https://pump.fun/CQzT2xDP1hTsruxVUSRXgMBwnH3jgKNNEBHwUdRfpump', '_blank')
+    window.open(getPumpFunUrl(TOKEN_CONFIG.ISRAEL.address), '_blank')
   }
 
   const handleBuyIran = () => {
     onButtonClick?.()
-    window.open('https://pump.fun/F7HPUw7BnQzdfUjCUehqjEGjfkqFGGNmUEptHuVDpump', '_blank')
+    window.open(getPumpFunUrl(TOKEN_CONFIG.IRAN.address), '_blank')
   }
 
   return (

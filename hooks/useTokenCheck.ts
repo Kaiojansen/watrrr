@@ -2,10 +2,11 @@ import { useEffect, useState } from 'react';
 import { useWallet } from '@solana/wallet-adapter-react';
 import { Connection, PublicKey } from '@solana/web3.js';
 import { TOKEN_PROGRAM_ID } from '@solana/spl-token';
+import { TOKEN_CONFIG, CONFIG } from '../config/tokens';
 
-// Endereços dos tokens
-const ISRAEL_TOKEN_ADDRESS = 'CQzT2xDP1hTsruxVUSRXgMBwnH3jgKNNEBHwUdRfpump';
-const IRAN_TOKEN_ADDRESS = 'F7HPUw7BnQzdfUjCUehqjEGjfkqFGGNmUEptHuVDpump';
+// Endereços dos tokens vindos da configuração central
+const ISRAEL_TOKEN_ADDRESS = TOKEN_CONFIG.ISRAEL.address;
+const IRAN_TOKEN_ADDRESS = TOKEN_CONFIG.IRAN.address;
 
 export interface TokenBalance {
   israel: number;
@@ -41,7 +42,7 @@ export const useTokenCheck = (): UserTokenInfo => {
 
     const checkTokens = async () => {
       try {
-        const connection = new Connection(process.env.NEXT_PUBLIC_SOLANA_RPC_URL || 'https://api.mainnet-beta.solana.com');
+        const connection = new Connection(CONFIG.SOLANA_RPC_URL);
         
         // Obter todas as contas de token da carteira
         const tokenAccounts = await connection.getParsedTokenAccountsByOwner(
