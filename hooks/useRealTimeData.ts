@@ -6,6 +6,7 @@ import { getRealTimeTokenData } from '../lib/solana'
 interface TokenData {
   price: number
   liquidity: number
+  marketCap: number
   address: string
   symbol: string
   name: string
@@ -25,6 +26,7 @@ export function useRealTimeData() {
     israel: {
       price: 0.000045,
       liquidity: 1250000,
+      marketCap: 0,
       address: 'CQzT2xDP1hTsruxVUSRXgMBwnH3jgKNNEBHwUdRfpump',
       symbol: 'ISRAEL',
       name: 'Israel Token',
@@ -33,6 +35,7 @@ export function useRealTimeData() {
     iran: {
       price: 0.000038,
       liquidity: 980000,
+      marketCap: 0,
       address: 'F7HPUw7BnQzdfUjCUehqjEGjfkqFGGNmUEptHuVDpump',
       symbol: 'IRAN',
       name: 'Iran Token',

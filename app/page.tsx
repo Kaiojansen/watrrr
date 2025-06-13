@@ -46,7 +46,7 @@ export default function Home() {
             <span className="font-tech text-lg text-green-300">{iranPercent.toFixed(1)}%</span>
           </div>
           <span className="font-space text-lg text-yellow-300 ml-4">
-            Market Cap: ${((israel.price * israel.liquidity) + (iran.price * iran.liquidity)).toLocaleString()}
+            Combined Market Cap: ${(israel.marketCap + iran.marketCap).toLocaleString()}
           </span>
           {loading && (
             <div className="animate-spin w-4 h-4 border-2 border-cyan-400 border-t-transparent rounded-full"></div>
