@@ -72,15 +72,15 @@ export default function Home() {
           />
         </div>
         
-        <h1 className="text-6xl md:text-8xl font-bold text-white mb-4 font-battle glow-text tracking-tight">
+        <h1 className="text-6xl md:text-8xl font-bold text-white mb-4 font-battle glow-text tracking-tight gradient-text">
           NBW
         </h1>
-        <h2 className="text-2xl md:text-3xl text-cyan-300 mb-6 font-space tracking-widest">
+        <h2 className="text-2xl md:text-3xl text-cyan-300 mb-6 font-space tracking-widest text-shadow-cyber">
           NEW BIG WAR
         </h2>
         <p className="text-lg text-gray-300 max-w-2xl mx-auto font-future leading-relaxed">
-          A sentiment measurement platform tracking community support between <span className="text-blue-400 font-bold">Israel</span> and{' '}
-          <span className="text-green-400 font-bold">Iran</span> tokens on Solana blockchain
+          A revolutionary <span className="gradient-text font-bold">sentiment measurement platform</span> tracking community support between <span className="text-blue-400 font-bold text-shadow-cyber">Israel</span> and{' '}
+          <span className="text-green-400 font-bold text-shadow-cyber">Iran</span> tokens on Solana blockchain
         </p>
         
         <div className="flex justify-center items-center space-x-10 mt-6">
@@ -125,20 +125,20 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.5 }}
         >
-          <div className="bg-gray-900/80 backdrop-blur-sm rounded-2xl p-10 border-2 border-gray-700">
+          <div className="bg-gradient-to-br from-gray-900/90 via-gray-800/80 to-gray-900/90 backdrop-blur-sm rounded-2xl p-10 border-2 border-cyan-400/20 shadow-2xl">
             <h3 className="text-3xl font-bold text-white mb-8 text-center font-battle glow-text flex items-center justify-center gap-3">
-              <Trophy size={32} weight="fill" className="text-yellow-400" />
-              COMMUNITY SENTIMENT TRACKER
-              <Trophy size={32} weight="fill" className="text-yellow-400" />
+              <Trophy size={32} weight="fill" className="text-yellow-400 animate-pulse" />
+              <span className="gradient-text">COMMUNITY SENTIMENT TRACKER</span>
+              <Trophy size={32} weight="fill" className="text-yellow-400 animate-pulse" />
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <motion.div 
-                className="text-center hover-lift"
+                className="text-center hover-lift bg-gradient-to-br from-blue-900/40 to-blue-800/20 rounded-xl p-6 border border-blue-500/30"
                 whileHover={{ scale: 1.05 }}
               >
                 <div className="text-5xl font-bold text-blue-400 mb-3 font-space flex items-center justify-center gap-2">
-                  <ShieldChevron size={32} className="text-blue-400" />
-                  ${israel.price.toFixed(8)}
+                  <ShieldChevron size={32} className="text-blue-400 animate-bounce" />
+                  <span className="gradient-text">${israel.price.toFixed(8)}</span>
                 </div>
                 <div className="text-xl text-gray-400 font-future">Israel Price</div>
                 <div className="text-sm text-gray-500 font-future mt-2 flex items-center justify-center gap-1">
@@ -148,12 +148,12 @@ export default function Home() {
               </motion.div>
               
               <motion.div 
-                className="text-center hover-lift"
+                className="text-center hover-lift bg-gradient-to-br from-green-900/40 to-green-800/20 rounded-xl p-6 border border-green-500/30"
                 whileHover={{ scale: 1.05 }}
               >
                 <div className="text-5xl font-bold text-green-400 mb-3 font-space flex items-center justify-center gap-2">
-                  <Flame size={32} className="text-green-400" />
-                  ${iran.price.toFixed(8)}
+                  <Flame size={32} className="text-green-400 animate-bounce" />
+                  <span className="gradient-text">${iran.price.toFixed(8)}</span>
                 </div>
                 <div className="text-xl text-gray-400 font-future">Iran Price</div>
                 <div className="text-sm text-gray-500 font-future mt-2 flex items-center justify-center gap-1">
@@ -163,12 +163,12 @@ export default function Home() {
               </motion.div>
               
               <motion.div 
-                className="text-center hover-lift"
+                className="text-center hover-lift bg-gradient-to-br from-yellow-900/40 to-yellow-800/20 rounded-xl p-6 border border-yellow-500/30"
                 whileHover={{ scale: 1.05 }}
               >
                 <div className="text-5xl font-bold text-yellow-400 mb-3 font-space flex items-center justify-center gap-2">
-                  <Trophy size={32} weight="fill" className="text-yellow-400" />
-                  {israelPercent > iranPercent ? 'ISRAEL' : 'IRAN'}
+                  <Trophy size={32} weight="fill" className="text-yellow-400 animate-pulse" />
+                  <span className="gradient-text">{israelPercent > iranPercent ? 'ISRAEL' : 'IRAN'}</span>
                 </div>
                 <div className="text-xl text-gray-400 font-future">Community Choice</div>
                 <div className="text-sm text-gray-500 font-future mt-2 flex items-center justify-center gap-1">
@@ -201,33 +201,35 @@ export default function Home() {
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <motion.div 
-              className="bg-gray-900/60 backdrop-blur-sm p-8 rounded-2xl border-2 border-blue-500 hover-lift"
+              className="bg-gradient-to-br from-blue-900/60 via-blue-800/40 to-blue-900/60 backdrop-blur-sm p-8 rounded-2xl border-2 border-blue-500/40 hover-lift shadow-2xl"
               whileHover={{ scale: 1.02 }}
             >
               <h4 className="text-2xl font-bold text-blue-400 mb-4 font-tech flex items-center gap-2">
-                <ShieldChevron size={24} className="text-blue-400" /> Israel Token
+                <ShieldChevron size={24} className="text-blue-400 animate-pulse" /> 
+                <span className="gradient-text">Israel Token</span>
               </h4>
               <p className="text-gray-300 font-future leading-relaxed mb-4">
                 Show your support for Israel! Each token purchase represents community sentiment 
                 and contributes to measuring public opinion in this digital sentiment tracker.
               </p>
-              <div className="text-sm text-blue-300 font-tech">
+              <div className="text-sm text-blue-300 font-tech bg-blue-900/30 p-3 rounded-lg border border-blue-500/20">
                 Contract: {israel.address}
               </div>
             </motion.div>
             
             <motion.div 
-              className="bg-gray-900/60 backdrop-blur-sm p-8 rounded-2xl border-2 border-green-500 hover-lift"
+              className="bg-gradient-to-br from-green-900/60 via-green-800/40 to-green-900/60 backdrop-blur-sm p-8 rounded-2xl border-2 border-green-500/40 hover-lift shadow-2xl"
               whileHover={{ scale: 1.02 }}
             >
               <h4 className="text-2xl font-bold text-green-400 mb-4 font-tech flex items-center gap-2">
-                <Flame size={24} className="text-green-400" /> Iran Token
+                <Flame size={24} className="text-green-400 animate-pulse" /> 
+                <span className="gradient-text">Iran Token</span>
               </h4>
               <p className="text-gray-300 font-future leading-relaxed mb-4">
                 Express your support for Iran! Every token purchase reflects community sentiment 
                 and helps measure public opinion in this digital sentiment tracker.
               </p>
-              <div className="text-sm text-green-300 font-tech">
+              <div className="text-sm text-green-300 font-tech bg-green-900/30 p-3 rounded-lg border border-green-500/20">
                 Contract: {iran.address}
               </div>
             </motion.div>
@@ -242,12 +244,12 @@ export default function Home() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 2.5 }}
       >
-        <div className="text-gray-500 font-future">
-          <p className="text-lg">© 2024 NBW - New Big War</p>
-          <p className="mt-2 text-sm">Community sentiment measurement on Solana blockchain</p>
+        <div className="text-gray-500 font-future bg-gradient-to-r from-gray-900/50 to-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/30">
+          <p className="text-lg gradient-text font-bold">© 2025 NBW - New Big War</p>
+          <p className="mt-2 text-sm text-gray-400">Community sentiment measurement on Solana blockchain</p>
           <div className="flex justify-center items-center space-x-8 mt-6">
             <FlagIsrael />
-            <Trophy size={28} weight="fill" className="text-yellow-400" />
+            <Trophy size={28} weight="fill" className="text-yellow-400 animate-pulse" />
             <FlagIran />
           </div>
         </div>
