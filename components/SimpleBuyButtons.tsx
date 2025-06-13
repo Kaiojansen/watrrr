@@ -19,12 +19,12 @@ export default function SimpleBuyButtons({
 
   const handleBuyIsrael = () => {
     onButtonClick?.()
-    window.open('https://pump.fun/E4n5gooEoFaDPb1oSDmN2VXjWKekrTn3EFE7KjNKpump', '_blank')
+    window.open('https://pump.fun/CQzT2xDP1hTsruxVUSRXgMBwnH3jgKNNEBHwUdRfpump', '_blank')
   }
 
   const handleBuyIran = () => {
     onButtonClick?.()
-    window.open('https://pump.fun/FTUFPc23YHBqSuLLNEAwLUCcgexUizpEGhN9FrUupump', '_blank')
+    window.open('https://pump.fun/F7HPUw7BnQzdfUjCUehqjEGjfkqFGGNmUEptHuVDpump', '_blank')
   }
 
   return (
