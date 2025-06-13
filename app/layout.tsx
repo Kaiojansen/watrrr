@@ -16,27 +16,29 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://nbw-war.vercel.app'),
+  metadataBase: new URL('https://newbigwar.xyz'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: 'NBW - New Big War | Community Sentiment Tracker',
     description: 'Join the ultimate community sentiment tracker! Express your support for Israel or Iran tokens on Solana blockchain. Real-time statistics, beautiful UI, and epic visual effects.',
-    url: 'https://nbw-war.vercel.app',
+    url: 'https://newbigwar.xyz',
     siteName: 'NBW - New Big War',
     images: [
       {
-        url: 'https://nbw-war.vercel.app/logo/nbw-logo.png',
+        url: '/logo/nbw-logo.png',
         width: 120,
         height: 120,
         alt: 'NBW Logo - New Big War',
+        type: 'image/png',
       },
       {
-        url: 'https://nbw-war.vercel.app/logo/nbw-logo.png',
+        url: '/logo/nbw-logo.png',
         width: 600,
         height: 600,
         alt: 'NBW - New Big War Community Sentiment Tracker',
+        type: 'image/png',
       },
     ],
     locale: 'en_US',
@@ -46,7 +48,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'NBW - New Big War | Community Sentiment Tracker',
     description: 'Join the ultimate community sentiment tracker! Express your support for Israel or Iran tokens on Solana blockchain. Real-time statistics and epic visual effects.',
-    images: ['https://nbw-war.vercel.app/logo/nbw-logo.png'],
+    images: ['/logo/nbw-logo.png'],
     creator: '@nbw_team',
     site: '@nbw_war',
   },
@@ -93,6 +95,27 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="32x32" href="/logo/nbw-logo.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/logo/nbw-logo.png" />
         <link rel="shortcut icon" href="/logo/nbw-logo.png" />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="NBW - New Big War | Community Sentiment Tracker" />
+        <meta property="og:description" content="Join the ultimate community sentiment tracker! Express your support for Israel or Iran tokens on Solana blockchain." />
+        <meta property="og:url" content="https://newbigwar.xyz" />
+        <meta property="og:site_name" content="NBW - New Big War" />
+        <meta property="og:image" content="https://newbigwar.xyz/logo/nbw-logo.png" />
+        <meta property="og:image:width" content="600" />
+        <meta property="og:image:height" content="600" />
+        <meta property="og:image:alt" content="NBW Logo - New Big War" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
+        
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="NBW - New Big War | Community Sentiment Tracker" />
+        <meta name="twitter:description" content="Join the ultimate community sentiment tracker! Express your support for Israel or Iran tokens on Solana blockchain." />
+        <meta name="twitter:image" content="https://newbigwar.xyz/logo/nbw-logo.png" />
+        <meta name="twitter:creator" content="@nbw_team" />
+        <meta name="twitter:site" content="@nbw_war" />
+        
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="apple-mobile-web-app-title" content="NBW - New Big War" />
