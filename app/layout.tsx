@@ -27,13 +27,13 @@ export const metadata: Metadata = {
     siteName: 'NBW - New Big War',
     images: [
       {
-        url: '/logo/nbw-logo.png',
+        url: 'https://nbw-war.vercel.app/logo/nbw-logo.png',
         width: 120,
         height: 120,
         alt: 'NBW Logo - New Big War',
       },
       {
-        url: '/logo/nbw-logo.png',
+        url: 'https://nbw-war.vercel.app/logo/nbw-logo.png',
         width: 600,
         height: 600,
         alt: 'NBW - New Big War Community Sentiment Tracker',
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'NBW - New Big War | Community Sentiment Tracker',
     description: 'Join the ultimate community sentiment tracker! Express your support for Israel or Iran tokens on Solana blockchain. Real-time statistics and epic visual effects.',
-    images: ['/logo/nbw-logo.png'],
+    images: ['https://nbw-war.vercel.app/logo/nbw-logo.png'],
     creator: '@nbw_team',
     site: '@nbw_war',
   },
