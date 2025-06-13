@@ -72,10 +72,10 @@ export default function Home() {
           />
         </div>
         
-        <h1 className="text-6xl md:text-8xl font-bold text-gray-200 mb-4 font-battle tracking-tight gradient-text">
+        <h1 className="text-6xl md:text-8xl font-bold text-gray-200 mb-4 font-frohburg tracking-tight gradient-text">
           NBW
         </h1>
-        <h2 className="text-2xl md:text-3xl text-cyan-300 mb-6 font-space tracking-widest">
+        <h2 className="text-2xl md:text-3xl text-cyan-300 mb-6 font-frohburg tracking-widest">
           NEW BIG WAR
         </h2>
         <p className="text-lg text-gray-300 max-w-2xl mx-auto font-future leading-relaxed">
@@ -86,14 +86,14 @@ export default function Home() {
         <div className="flex justify-center items-center space-x-10 mt-6">
           <div className="text-center">
             <FlagIsrael />
-            <p className="text-blue-400 font-future mt-2 text-sm">Israel</p>
+            <p className="text-blue-400 font-frohburg mt-2 text-sm">Israel</p>
           </div>
           <div className="text-center">
-            <span className="text-4xl font-battle text-gray-300">VS</span>
+            <span className="text-4xl font-frohburg text-gray-300">VS</span>
           </div>
           <div className="text-center">
             <FlagIran />
-            <p className="text-green-400 font-future mt-2 text-sm">Iran</p>
+            <p className="text-green-400 font-frohburg mt-2 text-sm">Iran</p>
           </div>
         </div>
       </motion.header>
@@ -126,7 +126,7 @@ export default function Home() {
           transition={{ duration: 1, delay: 1.5 }}
         >
           <div className="bg-gradient-to-br from-gray-900/90 via-gray-800/80 to-gray-900/90 backdrop-blur-sm rounded-2xl p-10 border-2 border-cyan-400/15 shadow-2xl">
-            <h3 className="text-3xl font-bold text-gray-200 mb-8 text-center font-battle flex items-center justify-center gap-3">
+            <h3 className="text-3xl font-bold text-gray-200 mb-8 text-center font-frohburg flex items-center justify-center gap-3">
               <Trophy size={32} weight="fill" className="text-yellow-400 animate-pulse" />
               <span className="gradient-text">COMMUNITY SENTIMENT TRACKER</span>
               <Trophy size={32} weight="fill" className="text-yellow-400 animate-pulse" />
@@ -136,7 +136,7 @@ export default function Home() {
                 className="text-center hover-lift bg-gradient-to-br from-blue-900/40 to-blue-800/20 rounded-xl p-6 border border-blue-500/20"
                 whileHover={{ scale: 1.05 }}
               >
-                <div className="text-5xl font-bold text-blue-400 mb-3 font-space flex items-center justify-center gap-2">
+                <div className="text-5xl font-bold text-blue-400 mb-3 font-frohburg flex items-center justify-center gap-2">
                   <ShieldChevron size={32} className="text-blue-400 animate-bounce" />
                   <span className="gradient-text">${israel.price.toFixed(8)}</span>
                 </div>
@@ -151,7 +151,7 @@ export default function Home() {
                 className="text-center hover-lift bg-gradient-to-br from-green-900/40 to-green-800/20 rounded-xl p-6 border border-green-500/20"
                 whileHover={{ scale: 1.05 }}
               >
-                <div className="text-5xl font-bold text-green-400 mb-3 font-space flex items-center justify-center gap-2">
+                <div className="text-5xl font-bold text-green-400 mb-3 font-frohburg flex items-center justify-center gap-2">
                   <Flame size={32} className="text-green-400 animate-bounce" />
                   <span className="gradient-text">${iran.price.toFixed(8)}</span>
                 </div>
@@ -166,7 +166,7 @@ export default function Home() {
                 className="text-center hover-lift bg-gradient-to-br from-yellow-900/40 to-yellow-800/20 rounded-xl p-6 border border-yellow-500/20"
                 whileHover={{ scale: 1.05 }}
               >
-                <div className="text-5xl font-bold text-yellow-400 mb-3 font-space flex items-center justify-center gap-2">
+                <div className="text-5xl font-bold text-yellow-400 mb-3 font-frohburg flex items-center justify-center gap-2">
                   <Trophy size={32} weight="fill" className="text-yellow-400 animate-pulse" />
                   <span className="gradient-text">{israelPercent > iranPercent ? 'ISRAEL' : 'IRAN'}</span>
                 </div>
@@ -200,14 +200,14 @@ export default function Home() {
           transition={{ duration: 1, delay: 2 }}
         >
           <div className="bg-gradient-to-br from-gray-900/90 via-gray-800/80 to-gray-900/90 backdrop-blur-sm rounded-2xl p-10 border-2 border-cyan-400/15 shadow-2xl">
-            <h3 className="text-3xl font-bold text-gray-200 mb-8 text-center font-battle">
+            <h3 className="text-3xl font-bold text-gray-200 mb-8 text-center font-frohburg">
               Token Information
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-gradient-to-br from-blue-900/30 to-blue-800/10 rounded-xl p-6 border border-blue-500/20">
                 <div className="flex items-center gap-3 mb-4">
                   <FlagIsrael />
-                  <h4 className="text-2xl font-bold text-blue-400 font-battle">Israel Token</h4>
+                  <h4 className="text-2xl font-bold text-blue-400 font-frohburg">Israel Token</h4>
                 </div>
                 <div className="space-y-3 text-gray-300">
                   <div className="flex justify-between">
@@ -228,7 +228,7 @@ export default function Home() {
               <div className="bg-gradient-to-br from-green-900/30 to-green-800/10 rounded-xl p-6 border border-green-500/20">
                 <div className="flex items-center gap-3 mb-4">
                   <FlagIran />
-                  <h4 className="text-2xl font-bold text-green-400 font-battle">Iran Token</h4>
+                  <h4 className="text-2xl font-bold text-green-400 font-frohburg">Iran Token</h4>
                 </div>
                 <div className="space-y-3 text-gray-300">
                   <div className="flex justify-between">

@@ -10,6 +10,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Frohburg';
+  src: url('/fonts/Frohburg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&family=Anton&family=Roboto+Condensed:wght@300;400;700&display=swap');
 
 :root {
@@ -196,6 +204,10 @@ body::before {
 /* Fontes sérias e impactantes */
 .font-battle {
   font-family: 'Waruna', 'Orbitron', monospace;
+}
+
+.font-frohburg {
+  font-family: 'Frohburg', 'Waruna', 'Orbitron', monospace;
 }
 
 .font-tech {
