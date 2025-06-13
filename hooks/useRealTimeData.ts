@@ -25,7 +25,7 @@ export function useRealTimeData() {
     israel: {
       price: 0.000045,
       liquidity: 1250000,
-      address: 'E4n5gooEoFaDPb1oSDmN2VXjWKekrTn3EFE7KjNKpump',
+      address: 'CQzT2xDP1hTsruxVUSRXgMBwnH3jgKNNEBHwUdRfpump',
       symbol: 'ISRAEL',
       name: 'Israel Token',
       decimals: 6
@@ -33,7 +33,7 @@ export function useRealTimeData() {
     iran: {
       price: 0.000038,
       liquidity: 980000,
-      address: 'FTUFPc23YHBqSuLLNEAwLUCcgexUizpEGhN9FrUupump',
+      address: 'F7HPUw7BnQzdfUjCUehqjEGjfkqFGGNmUEptHuVDpump',
       symbol: 'IRAN',
       name: 'Iran Token',
       decimals: 6

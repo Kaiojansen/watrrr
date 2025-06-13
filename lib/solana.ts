@@ -3,13 +3,13 @@ import { Connection, PublicKey, clusterApiUrl } from '@solana/web3.js'
 // Configuração dos tokens reais
 export const TOKENS = {
   ISRAEL: {
-    address: 'E4n5gooEoFaDPb1oSDmN2VXjWKekrTn3EFE7KjNKpump',
+    address: 'CQzT2xDP1hTsruxVUSRXgMBwnH3jgKNNEBHwUdRfpump',
     symbol: 'ISRAEL',
     name: 'Israel Token',
     decimals: 6
   },
   IRAN: {
-    address: 'FTUFPc23YHBqSuLLNEAwLUCcgexUizpEGhN9FrUupump',
+    address: 'F7HPUw7BnQzdfUjCUehqjEGjfkqFGGNmUEptHuVDpump',
     symbol: 'IRAN', 
     name: 'Iran Token',
     decimals: 6

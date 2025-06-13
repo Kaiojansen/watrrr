@@ -72,8 +72,8 @@ Visit the live application: **[NBW - New Big War](https://nbw-war.vercel.app)**
 - Live price and liquidity tracking
 
 ### Token Integration
-- **Israel Token:** `E4n5gooEoFaDPb1oSDmN2VXjWKekrTn3EFE7KjNKpump`
-- **Iran Token:** `FTUFPc23YHBqSuLLNEAwLUCcgexUizpEGhN9FrUupump`
+- **Israel Token:** `CQzT2xDP1hTsruxVUSRXgMBwnH3jgKNNEBHwUdRfpump`
+- **Iran Token:** `F7HPUw7BnQzdfUjCUehqjEGjfkqFGGNmUEptHuVDpump`
 - Powered by **Pump.fun** platform
 - Solana Mainnet integration
 
